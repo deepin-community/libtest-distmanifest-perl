@@ -1,0 +1,111 @@
+libtest-distmanifest-perl (1.014-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/rules: set MANIFEST_WARN_ONLY=1 which was designed for Debian.
+    (Closes: #796890)
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 06 Sep 2015 18:26:21 +0200
+
+libtest-distmanifest-perl (1.014-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Jonathan Yu ]
+  * Update copyright to DEP-5 format
+
+  [ gregor herrmann ]
+  * New upstream release 1.011.
+  * Remove alternative (build) dependencies that are already satisfied
+    in oldstable.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * New upstream release 1.012.
+    Closes: #789435
+  * Switch to "3.0 (quilt)" source format.
+  * debian/rules: remove AUTOMATED_TESTING, not used anymore in the tests.
+  * debian/copyright: update to Copyright-Format 1.0.
+  * debian/copyright: update years of upstream copyright and refresh
+    license stanzas.
+  * Set debhelper compatibility level to 8.
+  * Bump Standards-Version to 3.9.3 (no changes).
+  * Remove build dependencies that are not needed anymore.
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+  * Import upstream version 1.014.
+  * Update Upstream-Contact and copyright years in debian/copyright.
+  * Update build dependencies and debhelper compat level.
+  * Install new CONTRIBUTING file.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Jun 2015 03:05:51 +0200
+
+libtest-distmanifest-perl (1.009-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+
+  [ gregor herrmann ]
+  * debian/control: Changed: (build-)depend on perl instead of perl-
+    modules.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Mon, 28 Dec 2009 21:20:10 -0500
+
+libtest-distmanifest-perl (1.005-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Tue, 13 Oct 2009 08:06:38 -0400
+
+libtest-distmanifest-perl (1.003-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+    + Remove Perl::Critic tests (Closes: #538115)
+  * Standards-Version 3.8.3 (no changes)
+  * Bump to short debhelper rules version
+  * Enable Test::Kwalitee tests (add to B-D-I)
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Ryan Niebur ]
+  * Update jawnsy's email address
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Wed, 30 Sep 2009 07:08:02 -0400
+
+libtest-distmanifest-perl (1.2.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Added non-fatal errors; that is, tests that warn but do not fail.
+    This is useful for Debian distributions.
+  * Fixed dependency order (perl-modules before the dual life module)
+  * Used 1-space for continued B-D, B-D-I, Depends, etc.
+
+ -- Jonathan Yu <frequency@cpan.org>  Fri, 15 May 2009 22:57:18 -0400
+
+libtest-distmanifest-perl (1.1.4-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #519657)
+
+ -- Jonathan Yu <frequency@cpan.org>  Tue, 28 Apr 2009 17:07:01 -0400
